@@ -29,3 +29,6 @@ https://rinkeby.etherscan.io/address/0xE0Bdd31D2A104d55Ee90Fbef3fbE3C27890b489A
 # Remix IDE
 I recommend using Remix IDE here, https://remix.ethereum.org/ to deploy the two SmartContracts and do more Testing on the same implementation on the two smart contracts. thereby testing the effect on **execution** **gas** between the two implementation of smartcontract
 
+# Google Docs Link For Findings && Conclusions
+
+https://docs.google.com/document/d/1fyFdP6vXb2NC_R8nB6jSNG87nZs248lGILrjc2YoWR8/edit?usp=sharing
