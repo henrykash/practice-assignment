@@ -18,13 +18,13 @@ NOTE: Make Sure Before deploying the smartcontract on the scripts/deploy.ts Fold
 
 For the Contract Using Array of Struct to Create and Update Entity deployment details:
 
-contract_address: 0x12F35B84e744959CCb223EFC454cC257F36288eb
-https://rinkeby.etherscan.io/tx/0x3aa69dc06988d0b76ea412c4593d9532c8dce47f6d96c94c346bb779228a316a
+contract_address: 0x1C4194f9aa63deC32283e88C558A2C9d46cA0dCd
+https://rinkeby.etherscan.io/address/0x1C4194f9aa63deC32283e88C558A2C9d46cA0dCd
 
 For the Contract Using Mapping of Struct to Create and Update Entity deployment details:
 
-contract address: 0x78bD9f9FF9fC3DDC3b9581620C088a5b67A6cb43
-https://rinkeby.etherscan.io/tx/0xecddb2ae7d79e269485b5cb4ca09fd1d9f9af74a2c213d9d23ae24236138f63c
+contract address: 0xE0Bdd31D2A104d55Ee90Fbef3fbE3C27890b489A
+https://rinkeby.etherscan.io/address/0xE0Bdd31D2A104d55Ee90Fbef3fbE3C27890b489A
 
 # Remix IDE
 I recommend using Remix IDE here, https://remix.ethereum.org/ to deploy the two SmartContracts and do more Testing on the same implementation on the two smart contracts. thereby testing the effect on **execution** **gas** between the two implementation of smartcontract
