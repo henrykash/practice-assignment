@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 
 const main = async () => {
     const [deployer] = await ethers.getSigners();
-    const factory = await ethers.getContractFactory("Practice2");
+    const factory = await ethers.getContractFactory("Practice1");
     const deployedSwapper = await factory.deploy();
 
     let data = {

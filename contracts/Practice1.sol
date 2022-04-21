@@ -14,19 +14,21 @@ contract Practice1 {
     // an array of struct
     Entity[] public entities;
 
-    //adds new entity to the struct
-    function addEntity(uint256 _data, address _address2) public {
-        entities.push(Entity(_data, _address2));
+    //creates new entity and adds it to the array struct
+    function addEntity(uint256 _data) public returns (bool success) {
+        Entity memory newEntity;
+        newEntity.data = _data;
+        newEntity._address = msg.sender;
+        entities.push(newEntity);
+        return true;
     }
-
-    //updates the entities on the struct
-    function updateEntity(
-        uint256 _index,
-        uint256 _data,
-        address _address2
-    ) public {
-        Entity storage entity = entities[_index];
-        entity.data = _data;
-        entity._address = _address2;
+    
+    //updates the entity
+    function updateEntity(uint256 _index, uint256 _data)
+        public
+        returns (bool success)
+    {
+        entities[_index].data = _data;
+        return true;
     }
 }

@@ -11,22 +11,24 @@ contract Practice2 {
         address _address;
     }
 
-    // Array
-    Entity[] public entities;
+    //mapping struct
+    mapping(address => Entity) entities;
 
     //adds new entity to the struct
-    function addEntity(uint256 _data, address _address2) public {
-        entities.push(Entity(_data, _address2));
+    function addEntity(uint256 _data) public returns (bool success) {
+        Entity memory newEntity;
+        newEntity.data = _data;
+        newEntity._address = msg.sender;
+        entities[msg.sender] = newEntity;
+        return true;
     }
 
     //updates the entities on the struct
-    function updateEntity(
-        uint256 _index,
-        uint256 _data,
-        address _address2
-    ) public {
-        Entity storage entity = entities[_index];
-        entity.data = _data;
-        entity._address = _address2;
+    function updateEntity(address _user, uint256 _data)
+        public
+        returns (bool success)
+    {
+        entities[_user].data = _data;
+        return true;
     }
 }
