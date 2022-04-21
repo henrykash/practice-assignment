@@ -1,0 +1,6 @@
+
+# Provide these credentials on your .env file 
+
+WALLET_ADDRESS =
+PRIVATE_KEY =
+JSON_RPC =

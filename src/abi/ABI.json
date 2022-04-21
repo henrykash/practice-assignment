@@ -1,0 +1,62 @@
+[
+    {
+        "type": "function",
+        "name": "addEntity",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "_data"
+            },
+            {
+                "type": "address",
+                "name": "_address2"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "entities",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "type": "uint256",
+                "name": "data"
+            },
+            {
+                "type": "address",
+                "name": "_address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "updateEntity",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "_index"
+            },
+            {
+                "type": "uint256",
+                "name": "_data"
+            },
+            {
+                "type": "address",
+                "name": "_address2"
+            }
+        ],
+        "outputs": []
+    }
+]
